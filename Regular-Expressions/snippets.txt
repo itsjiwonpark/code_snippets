@@ -7,10 +7,21 @@
 \s      - Whitespace (space, tab, newline)
 \S      - Not Whitespace (space, tab, newline)
 
+-- anchor -- 
 \b      - Word Boundary
 \B      - Not a Word Boundary
 ^       - Beginning of a String
 $       - End of a String
+
+--character set-- 
+이 안에서는 특수문자 escape할 필요 없음
+843-4839
+843.4829
+/\d\d\d[.-]\d\d\d\d/ 
+: []안의 하나만 매치되면 그 다음으로 넘어감
+-가 가운데 쓰이면 range를 나타냄: [a-zA-Z] 모든 캐릭터들
+^가 캐릭터셋 안에서 쓰이면 아닌 걸 나타냄: [^a-z] 소문자 a-z가 아닌 것
+
 
 []      - Matches Characters in brackets
 [^ ]    - Matches Characters NOT in brackets
